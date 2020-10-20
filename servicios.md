@@ -1,5 +1,5 @@
 ---
-title: Work
+title: Servicios
 position: 2
 excerpt: Together, anything is possible
 intro-text: Nuestros principales clientes son del sector de servicios, público en general, decoradores y artistas, agencias de publicidad, fabricantes de ropa, zapateros y marroquinería, hoteles, restaurantes y banquetes. Colegios y universidades. Iglesias y conventos.
@@ -22,6 +22,8 @@ service:
 - title: Cotización
   icon: budget
   description: Cada trabajo a realizar es especial y su cotización va a depender de la cantidad de puntadas del diseño, cantidad de colores, cantidad a producir y sobre que tipo de tela va a ir bordado, por eso es necesario que nos envíen el diseño y toda la información requerida para poder hacer una cotización correcta.
+quote: Póngase en contacto con nosotros.
+mail: admin@bordaind.com
 pagination:
   enabled: true
   collection: work

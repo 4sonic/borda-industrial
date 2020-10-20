@@ -53,16 +53,29 @@
 </div>
 </div>
 <div class="off-canvas-content" data-off-canvas-content id="swup-body">
-<div class="navigation">
-  <div class="grid-x grid-padding-x grid-padding-y align-justify">
-    <div class="shrink cell">
-      <a href="/"><span class="show-for-sr">Home</span>borda</a>
-    </div>
-    <div class="shrink cell text-right">
-      <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" aria-label="menu" type="button" data-toggle="offCanvas toggle">
-        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-      </button>
-    </div>
+<div class="grid-x grid-padding-x padding-vertical-1  align-justify navigation align-middle" id="top">
+  <div class="auto cell">
+    <a href="/"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
+  </div>
+  <div class="shrink cell">
+      <div class="hide-for-large">
+        <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" aria-label="menu" type="button" data-toggle="offCanvas toggle">
+          <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <div class="show-for-large margin-bottom-2">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li><a href="/nosotros/">Nosotros</a></li>
+          <li><a href="/servicios/">Servicios</a></li>
+          <li><a href="/galeria/">Galeria</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+          <li class="icon-social"><a href="" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+          <li class="icon-social"><a href="https://www.instagram.com/" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+          <li class="icon-social"><a href="" target="_blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+        </ul>
+      </div>
   </div>
 </div>
 <div class="swup-transition-fade">

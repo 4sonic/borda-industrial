@@ -1,18 +1,49 @@
+{% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
 
 <!-- Navigation -->
-<div class="navigation">
+<div class="grid-x grid-padding-x padding-vertical-1  align-justify navigation align-middle" id="top">
 
-  <div class="grid-x grid-padding-x grid-padding-y align-justify">
+  <div class="auto cell">
+    <a href="/"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
+  </div>
 
-    <div class="shrink cell">
-      <a href="/"><span class="show-for-sr">Home</span>borda</a>
-    </div>
+  <div class="shrink cell">
 
-    <div class="shrink cell text-right">
-      <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" aria-label="menu" type="button" data-toggle="offCanvas toggle">
-        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-      </button>
-    </div>
+      <div class="hide-for-large">
+        <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" aria-label="menu" type="button" data-toggle="offCanvas toggle">
+          <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
+      <div class="show-for-large margin-bottom-2">
+        <ul class="dropdown menu" data-dropdown-menu>
+          {% for entry in site.data.navigation %}
+          {% if entry.url == current_page %}
+          {% assign current = ' class="active"' %}
+          {% else %}
+          {% assign current = null %}
+          {% endif %}
+          {% assign sublinks = entry.sublinks %}
+          {% if sublinks %}
+          <li{{ current }}>
+          <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+          <ul class="menu">
+          {% for sublink in sublinks %}
+          <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+          {% endfor %}
+          </ul>
+          </li>
+          {% else %}
+          <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+          <li class="icon-social"><a href="{{site.social.facebook}}" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+          <li class="icon-social"><a href="{{site.social.instagram}}" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+          <li class="icon-social"><a href="{{site.social.twitter}}" target="_blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+        </ul>
+      </div>
 
   </div>
 

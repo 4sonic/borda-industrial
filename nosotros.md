@@ -7,7 +7,7 @@ description: La creación y desarrollo del diseño es nuestro interés primordia
 image: "/uploads/nosotros.jpg"
 history:
 - title: Historia
-  text: Borda nace hace más de un cuarto de siglo con la mejor tecnología del momento y con el mejor equipo de trabajo, abierto desde un inicio para crear un espacio y que nuestros clientes y amigos puedan desarrollar su idea de diseño en el producto con los elementos que existen a su disposición pues nos motiva la idea que puedan echar andar su imaginación brindándoles asesoria y apoyo y puedan crear sus propios artículos sea d Decoracion, de moda, de promoción o de imagen con exclusividad y buen gusto y con la garantía de nuestra calidad ganada con el paso de los años.
+  text: Borda nace hace más de un cuarto de siglo con la mejor tecnología del momento y con el mejor equipo de trabajo, abierto desde un inicio para crear un espacio y que nuestros clientes y amigos puedan desarrollar su idea de diseño en el producto con los elementos que existen a su disposición pues nos motiva la idea que puedan echar andar su imaginación brindándoles asesoría y apoyo y puedan crear sus propios artículos ya sea decoración, de moda, de promoción o de imagen con exclusividad y buen gusto y con la garantía de nuestra calidad ganada con el paso de los años.
 details:
 - title: Misión
   text: En Borda Industrial nuestra misión es darle servicio a todo tipo de empresa y al hogar, en el desarrollo de su producto, tanto en diseño como en confección, con la mejor calidad y exclusividad, satisfaciendo sus necesidades de gusto, identidad y comodidad.
@@ -17,7 +17,6 @@ testimonials:
 - text: Hay mucha tela de donde cortar
   cite: Borda Industrial
 - text: Metemos aguja para sacar hebra
-    and punch.
   cite: Borda Industrial
 - text: Vendemos lo que bordamos no bordamos lo que vendemos
   cite: Borda Industrial

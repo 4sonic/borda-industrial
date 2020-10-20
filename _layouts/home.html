@@ -73,11 +73,18 @@ layout: default
 
 
 <!-- Home Intro -->
-<div class="grid-container" style="padding-bottom: 4rem;">
-  <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1 align-center">
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1">
 
-    <div class="small-12 medium-8 large-10 cell text-center">
+    <div class="small-12 medium-10 cell">
       <h2>{{page.header}}</h2>
+      {% if page.sub-header %}
+      <h3 class="sans-regular medium-gray">{{page.sub-header}}</h3>
+      {% endif %}
+      {% if page.sign-off %}
+      <h3 class="sans-regular medium-gray">{{page.sign-off}}</h3>
+      {% endif %}
+      <div class="padding-top-1"><a href="/nosotros/" class="h4 sans-regular medium-gray">Leer más <svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></a></div>
     </div>
 
   </div>
@@ -95,16 +102,7 @@ layout: default
   <div class="grid-x grid-padding-x grid-padding-y">
     {% assign works = site.work | where: "is-selected", "true" %}
     {% for work in works %}
-    <div class="small-12 medium-6 {% if work.is-full-width %}medium-12{% endif %} cell text-center">
-        {% assign image = work.image %}
-        <div class="margin-bottom-1 image" data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}">
-          <div class="content grid-y align-center">
-            <div class="shrink cell padding-1">
-
-            </div>
-          </div>
-        </div>
-    </div>
+      {% include blocks/excerpt.html %}
     {% endfor %}
   </div>
 </div>
@@ -122,13 +120,14 @@ layout: default
 </div>
 <!-- End Home Projects Link -->
 
+
 <!-- Producto -->
 <div class="grid-container" style="padding-bottom: 4rem;">
   <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1 align-center">
 
     <div class="small-12 medium-8 large-10 cell text-center">
-      <h2>{{page.product-header}}</h2>
-      <h3 class="sans-regular medium-gray">{{page.product-sub-header}}</h3>
+      <h3>{{page.product-header}}</h3>
+      <h4 class="sans-regular medium-gray">{{page.product-sub-header}}</h4>
     </div>
 
   </div>
@@ -161,7 +160,7 @@ layout: default
     <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-12 medium-8 cell">
         <h4>{{ page.quote }}</h4>
-        <h4 class="sans-regular medium-gray"><a href="mailto:admin@bordaind.com">{{ page.mail }}</a></h4>
+        <h4 class="sans-regular medium-gray"><a href="mailto:info@bordaindustrial.com">{{ page.mail }}</a></h4>
       </div>
     </div>
   </div>

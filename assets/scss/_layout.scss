@@ -51,23 +51,67 @@ svg {
   max-width: 100%;
 }
 
+span {
+  color: $dark-gray;
+  font-weight: bold;
+  font-size: 125%;
+}
+
 ::selection {
-  background: $primary-color;
-  color: $black;
+  background: $black;
+  color: $white;
 }
 
 :focus {
   outline: 0;
 }
 
-// 3. Plugins
+li {
+  font-size: 100%;
+}
+
+
+// 3. Mixin
 // ----------
+
+@mixin margin-three {
+  margin-bottom: 3rem;
+}
+
+.padding-vertical-space-1 {
+  @include breakpoint(small) {
+    @include padding(1, null, 1, null);
+  }
+  @include breakpoint(medium) {
+    @include padding(2, null, 2, null);
+  }
+  @include breakpoint(large) {
+    @include padding(2, null, 2, null);
+  }
+}
+
+.padding-space-1 {
+  @include breakpoint(small) {
+    @include padding(1, 1, 1, 1);
+  }
+  @include breakpoint(medium) {
+    @include padding(3, 3, 3, 3);
+  }
+  @include breakpoint(large) {
+    @include padding(5, 5, 5, 5);
+  }
+}
 
 // 4. Color
 // --------
 
 .white {
   color: $white;
+}
+
+.medium-gray {
+  color: $medium-gray;
+  @include links ($medium-gray, $black);
 }
 
 .primary-color {
@@ -93,6 +137,10 @@ svg {
   text-transform: uppercase;
 }
 
+.swiper-text-uppercase {
+  font-size: 130%;
+}
+
 i, cite, em, var, address, dfn {
   font-style: normal;
 }
@@ -101,12 +149,13 @@ p a {
   border-bottom: 1px solid $black;
 }
 
-.sans-regular {
-  font-family: $sans-regular;
+.sans-bold {
+  font-family: $sans-bold;
+  font-weight: 700;
 }
 
-.serif-regular {
-  font-family: $serif-regular;
+.sans-regular {
+  font-family: $sans-regular;
 }
 
 // 6. Navigation
@@ -194,15 +243,20 @@ p a {
 */
 
 
-header {
+.navigation{
+  font-size: 1.25rem;
+  span {
+    color: $dark-gray;
+    font-weight: 400;
+  }
   @include breakpoint(small) {
-    @include padding(1, 1, null, 1);
+    @include padding(1, 1, 1, 0);
   }
   @include breakpoint(medium) {
-    @include padding(1, 1, null, 1);
+    @include padding(1, 1, 1, 1);
   }
   @include breakpoint(large) {
-    @include padding(1, 2, null, 1);
+    @include padding(1, 2, 1, 1);
   }
 }
 
@@ -307,6 +361,7 @@ z-index: 1000;
 }
 
 .content p {
+  font-size: 150%;
 margin-bottom: 0
 }
 
@@ -345,7 +400,8 @@ url('/assets/img/arrow-right@3x.png') 3x
 .loader {
   z-index: 1040;
   position: fixed;
-  background: $black;
+  background: $white;
+  color: $black;
   top: 0;
   left: 0;
   height: 100%;
@@ -369,13 +425,207 @@ main {
 }
 
 
-// Hero for small
-// ------
+.slider{
+  font-family: "Messina Sans Regular";
+  font-weight: bold;
+	height: 600px;
+	background-color: #293132;
+	text-align: center;
+	position: relative;
+	animation: slideColor 10s forwards infinite;
+  margin-bottom: 3rem;
+}
+
+.caption{
+	line-height: 100px;
+	font-size: 60px;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-shadow: 0px 5px 5px rgba(0,0,0,.25);
+	margin-left: -300px;
+}
+
+.text-box{
+	display: inline-block;
+	position: relative;
+  padding-left: 1rem;
+}
+
+.text-box div{
+	display: inline-block;
+	position: absolute;
+	top: -200px;
+	transform: rotateX(-90deg);
+	opacity: 0;
+	text-shadow: 0px 5px 5px rgba(0,0,0,.25);
+	animation-timing-function: ease;
+}
+
+.text-box div:nth-child(1){
+	animation: rollDown 10s forwards infinite;
+}
+
+.text-box div:nth-child(2){
+	animation: rollDown2 10s forwards infinite;
+}
+
+.text-box div:nth-child(3){
+	animation: rollDown3 10s forwards infinite;
+}
+
+@keyframes rollDown {
+	0%{
+		top: -200px;
+		transform: rotateX(-90deg);
+	}
+	11%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	22%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	33%{
+		top: 50px;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+@keyframes rollDown2 {
+	33%{
+		top: -200px;
+		transform: rotateX(-90deg);
+	}
+	44%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	55%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	66%{
+		top: 50px;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+@keyframes rollDown3 {
+	66%{
+		top: -200px;
+		transform: rotateX(-90deg);
+	}
+	77%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	88%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	99%{
+		top: 50px;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+@keyframes slideColor{
+	0%{
+		background-color: #387780;
+	}
+	33%{
+		background-color: #3f88c5;
+	}
+	66%{
+		background-color: #588b8b;
+	}
+	100%{
+		background-color: #387780;
+	}
+}
+
+
+// video
+.hero {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+  margin-bottom: 3rem;
+  @include links ($white, $black)
+}
+
+.hero__arrow {
+  @include padding(1.5,1.5,1.5,1.5);
+  @include breakpoint(medium) {
+    @include padding(2,2,2,2);
+  }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  @include links ($primary-color, $white)
+}
+.hero video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: $black;
+}
+
+
+.logo {
+  top: rem-calc(20);
+  @include horizontal-center;
+  img {
+    max-width: 92px;
+  }
+}
+
+// Off-canvas
+// -------------
+
+.off-canvas {
+  @include links ($black, $black);
+}
+
+// hero
+
 .index__hero-image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 80vh;
   padding: 2rem;
-  height: 60vh;
+}
+
+
+
+
+
+
+// Footer
+
+footer {
+  background-color: $black;
+  @include links ($white, $dark-gray);
+
 }

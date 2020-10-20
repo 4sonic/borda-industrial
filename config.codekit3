@@ -649,20 +649,6 @@
 		"oAP": "\/assets\/favicons\/site.webmanifest",
 		"oF": 0
 		},
-	"\/assets\/fonts\/freight-disp-book.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/freight-disp-book.woff",
-		"oF": 0
-		},
-	"\/assets\/fonts\/freight-disp-book.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/fonts\/freight-disp-book.woff2",
-		"oF": 0
-		},
 	"\/assets\/fonts\/gallery.woff": {
 		"cB": 0,
 		"ft": 8192,
@@ -677,18 +663,46 @@
 		"oAP": "\/assets\/fonts\/gallery.woff2",
 		"oF": 0
 		},
-	"\/assets\/fonts\/gt-haptik-regular.woff": {
+	"\/assets\/fonts\/messina-sans-bold.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/gt-haptik-regular.woff",
+		"oAP": "\/assets\/fonts\/messina-sans-bold.ttf",
 		"oF": 0
 		},
-	"\/assets\/fonts\/gt-haptik-regular.woff2": {
+	"\/assets\/fonts\/messina-sans-bold.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/assets\/fonts\/gt-haptik-regular.woff2",
+		"oAP": "\/assets\/fonts\/messina-sans-bold.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/messina-sans-bold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/messina-sans-bold.woff2",
+		"oF": 0
+		},
+	"\/assets\/fonts\/messina-sans-regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/messina-sans-regular.ttf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/messina-sans-regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/messina-sans-regular.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/messina-sans-regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/messina-sans-regular.woff2",
 		"oF": 0
 		},
 	"\/assets\/icons\/symbol-defs.svg": {
@@ -10985,6 +10999,24 @@
 		"oAP": "\/robots.txt",
 		"oF": 0
 		},
+	"\/servicios.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/servicios.md",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/subscribe.md": {
 		"cB": 0,
 		"cS": 0,
@@ -11032,24 +11064,6 @@
 		"oA": 0,
 		"oAP": "\/time.html",
 		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/work.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 2,
-		"oAP": "\/work.md",
-		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,

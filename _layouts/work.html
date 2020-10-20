@@ -37,7 +37,7 @@ layout: default
 
 
 <!-- Works -->
-<div class="grid-container">
+<div class="grid-container margin-bottom-2">
   <div class="grid-x grid-padding-x grid-padding-y">
     {% assign works = site.work | where: "is-service", "true" %}
     {% for work in works %}
@@ -47,23 +47,17 @@ layout: default
 </div>
 <!-- End Works -->
 
-
-
-<!-- Clients -->
-<div class="grid-container padding-vertical-3">
-  <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-10 large-10 cell text-center">
-      <h3>Algunos de nuestros clientes</h3>
+<!-- Page Quote -->
+{% if page.quote %}
+<section class="light-gray-background">
+  <div class="grid-container padding-vertical-3">
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="small-12 medium-8 cell">
+        <h4>{{ page.quote }}</h4>
+        <h4 class="sans-regular medium-gray"><a href="mailto:info@bordaindustrial.com">{{ page.mail }}</a></h4>
+      </div>
     </div>
   </div>
-  <div class="grid-x small-up-1 medium-up-3 align-center align-middle">
-
-    {% for item in site.clients %}
-    <div class="cell text-center padding-3">
-        <a href="{{ item[1] }}" target="_blank" rel="noopener"><span class="show-for-sr">{{ item[0] }}</span><svg class="icon icon-clients icon-{{ item[0] }}"><use xlink:href="/assets/icons/symbol-defs.svg#icon-{{ item[0] }}"></use></svg></a>
-    </div>
-    {% endfor %}
-
-  </div>
-</div>
-<!-- End Clients -->
+</section>
+{% endif %}
+<!-- End Page Quote -->
