@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<!-- Page Image -->
+{% if page.image %}
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 cell">
+
+      {% assign image = page.image %}
+      <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="image">
+        {% if page.video %}
+        <div class="grid-y height-100 align-center video content">
+          <div class="shrink cell text-center" data-src="{{page.video}}">
+            <a href="{{page.video}}" class="white"><svg class="icon icon-play_arrow"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play_arrow"></use></svg></a>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Page Image -->
+
+<!-- Title -->
+<section class="grid-container">
+<div class="grid-x grid-padding-y align-center project__meta">
+  <div class="small-8 medium-7 large-7 cell text-center">
+    <div class="h5 text-lowercase">{{ page.client }} </div>
+    <div class="h5 text-lowercase">{{ page.subject }}</div>
+  </div>
+</div>
+</section>
+<!-- End Title -->
+
+<!-- Content -->
+<section class="grid-container">
+<div class="grid-x grid-padding-y align-center">
+  <div class="small-12 medium-8 cell text-center">
+    {{ content }}
+  </div>
+</div>
+</section>
+<!-- End Content -->
+
+<!-- Images -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    {% for picture in page.images %}
+     {% if picture.aspect == "landscape" %}
+     <div class="small-12 medium-12 cell">
+    {% assign image = picture.image %}
+    <div class="margin-bottom-2 image" data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}"></div>
+     </div>
+     {% elsif picture.aspect == "portrait" %}
+     <div class="small-12 medium-6 cell">
+    {% assign image = picture.image %}
+    <div class="margin-bottom-2 image" data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}"></div
+     </div>
+     {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<!-- End Images -->
+
+<!-- Pagination -->
+<div class="grid-container padding-bottom-2">
+
+<div class="grid-x grid-padding-y align-center">
+  <div class="small-12 medium-8 cell text-center">
+    <h5 class="text-lowercase">Otros Servicios</h5>
+  </div>
+</div>
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+    {% assign works = site.work | where_exp:"work","work.url != page.url" |  assign works = site.work | where: "is-service", "true" %}
+    {% for work in works limit:3 %}
+      <div class="small-12 medium-4 {% if work.is-full-width %}medium-12{% endif %} cell text-center">
+        <a href="{{ work.url }}">
+          {% assign image = work.image %}
+          <div class="margin-bottom-2 image" data-interchange="{% include images/interchange-img-small-12-medium-4-cell.html %}"></div>
+            <div class="text-lowercase">{{ work.client }} </div>
+            <div class="text-lowercase">{{ work.subject }}</div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- End Pagination -->

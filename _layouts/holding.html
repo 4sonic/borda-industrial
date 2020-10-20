@@ -1,0 +1,37 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Head -->
+{% include site/head.html %}
+<!-- End Head -->
+
+<body class="{{page.layout | slugify}} grid-y grid-padding-x" style="height: 100vh;">
+
+<div class="grid-y" style="height: 100vh;">
+  
+  <div class="auto cell text-center">
+    <div class="grid-y height-100 align-center">
+      <div class="grid-x grid-padding-x grid-padding-y" data-aos="fade-up">
+        <div class="small-12 cell">
+          <a href="mailto:{{site.email}}"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="shrink cell text-center">
+    <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="small-12 cell">
+          <a href="mailto:{{site.email}}">{{site.email}}</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

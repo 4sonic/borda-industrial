@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+<!-- Page Image -->
+{% if page.image %}
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 cell">
+
+      {% assign image = page.image %}
+      <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="image">
+        {% if page.video %}
+        <div class="grid-y height-100 align-center video content">
+          <div class="shrink cell text-center" data-src="{{page.video}}">
+            <a href="{{page.video}}" class="white"><svg class="icon icon-play_arrow"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play_arrow"></use></svg></a>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Page Image -->
+
+
+<!-- About Intro -->
+<section class="grid-container margin-top-2">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-11 large-11 cell text-center" data-aos="none">
+      <h3 class="primary-font">{{page.intro-text}}</h3>
+    </div>
+  </div>
+</section>
+<!-- End About Intro -->
+
+
+<!-- About text -->
+<section class="grid-container margin-top-2">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-11 large-11 cell text-center" data-aos="none">
+      <p class="primary-font">{{page.description}}</p>
+    </div>
+  </div>
+</section>
+<!-- End About text -->
+
+<!-- Story Details -->
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2 margin-bottom-2 text-center medium-text-left">
+    {% for detail in page.history %}
+      <div class="small-12 medium-12 cell" data-aos="none">
+        <h3 class="primary-font">{{ detail.title }}</h3>
+        <p>{{ detail.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<!-- End Story Details -->
+
+
+<!-- Story Details -->
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2 margin-bottom-2 text-center medium-text-left">
+    {% for detail in page.details %}
+      <div class="small-12 medium-6 cell" data-aos="none">
+        <h3 class="primary-font">{{ detail.title }}</h3>
+        <p>{{ detail.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<!-- End Story Details -->
+
+<!-- Story Testimonials -->
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-8 cell text-center">
+    {% for testimonial in page.testimonials %}
+    <blockquote data-aos="none">
+        <h4 class="primary-font">{{ testimonial.text }}</h4>
+        <cite>{{ testimonial.cite }}</cite>
+    </blockquote>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- End Story Testimonials -->
+
+<!-- Page Quote -->
+{% if page.quote %}
+<section class="light-gray-background">
+  <div class="grid-container padding-vertical-3">
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="small-12 medium-8 cell">
+        <h4>{{ page.quote }}</h4>
+        <h4 class="sans-regular medium-gray"><a href="mailto:admin@bordaind.com">{{ page.mail }}</a></h4>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Page Quote -->

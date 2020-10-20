@@ -1,0 +1,155 @@
+---
+layout: default
+---
+
+<!-- Hire Us Intro -->
+<section class="grid-container margin-top-2">
+  <div class="grid-x grid-padding-x grid-padding-y align-center" data-aos="none">
+    <div class="small-12 medium-10 large-10 cell text-center">
+      <h3 class="primary-font">{{page.intro-text}}</h3>
+    </div>
+  </div>
+</section>
+<!-- End Hire Us Intro -->
+
+<!-- New Contacts -->
+<div class="grid-container">
+  {% for location in page.locations %}
+    <div class="grid-x grid-padding-x grid-padding-y">
+
+      <div class="small-12 medium-8 medium-offset-1 cell">
+        <div id="map" style="width: 100%; height: 20rem" class="margin-bottom-1"></div>
+      </div>
+
+      <div class="small-12 medium-2 cell">
+          <div class="cell contact__enquiry">
+            <h3>{{ location.title }}</h4>
+            {{ location.address-text | markdownify }}
+            <div><a href="{{ location.directions }}" class="underline">Dirección</a></div>
+            <div><a href="tel:{{ location.phone }}" class="underline">{{ location.phone }}</a></div>
+          </div>
+      </div>
+
+    </div>
+  {% endfor %}
+</div>
+<!-- End New Contacts -->
+
+
+<!-- Hire Us Intro -->
+<section class="grid-container margin-top-2" data-aos="none">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-8 cell text-center">
+      {{page.content | markdownify}}
+    </div>
+  </div>
+</section>
+<!-- End Hire Us Intro -->
+
+<!-- Form -->
+<div class="grid-container margin-top-2 margin-bottom-3">
+  <form name="Contacto" method="POST" netlify-honeypot="bot-field" netlify>
+
+    <div class="hide">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </div>
+
+    <div class="grid-container" data-aos="none">
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 medium-6 cell">
+          <label>Nombre
+            <input type="text" name="Nombre">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Apellido
+            <input type="text" name="Apellido">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Email
+            <input type="email" name="Email">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Numero de teléfono
+            <input type="text" name="Teléfono">
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Tipo de consulta
+            <select name="Tipo de consulta">
+              <option value="Información general">Información general</option>
+              <option value="Pedir cita">Pedir cita</option>
+              <option value="Solicitar presupuesto">Solicitar presupuesto</option>
+            </select>
+          </label>
+        </div>
+        <div class="small-12 medium-6 cell">
+          <label>Locación
+            <input type="text" name="Locación">
+          </label>
+        </div>
+        <div class="small-12 medium-12 cell">
+          <label>Cuentános mas..
+            <textarea rows="12" name="Mensaje" placeholder="En Borda Industrial no limitamos a nuestros cliente con pedidos mínimos, ofrecemos bordados desde una unidad, pero por su puesto, estamos en la capacidad de ofrecer precios más atractivos a mayor volumen."></textarea>
+          </label>
+        </div>
+
+        <div class="small-12 medium-12 cell">
+        <input type="submit" class="button" value="Enviar">
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>
+<!-- End Form -->
+
+
+
+<!-- Script -->
+<script>
+mapboxgl.accessToken = "pk.eyJ1IjoiNHNvbmljIiwiYSI6ImNqbWd5NzV0aDA0Y2wzdm9tcW56bXQ5dm8ifQ.c1Z8TPxEqiegrleIGQyFog";
+
+/* Map: This represents the map on the page. */
+var map = new mapboxgl.Map({
+container: "map",
+style: "mapbox://styles/mapbox/streets-v11",
+zoom: 15,
+center: [-103.365272, 20.682916]
+});
+
+map.on("load", function () {
+/* Image: An image is loaded and added to the map. */
+map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+if (error) throw error;
+map.addImage("custom-marker", image);
+/* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+map.addLayer({
+id: "markers",
+type: "symbol",
+/* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+source: {
+type: "geojson",
+data: {
+type: 'FeatureCollection',
+features: [
+{
+type: 'Feature',
+properties: {},
+geometry: {
+type: "Point",
+coordinates: [-103.3629458, 20.6837375]
+}
+}
+]
+}
+},
+layout: {
+"icon-image": "custom-marker",
+}
+});
+});
+});
+</script>

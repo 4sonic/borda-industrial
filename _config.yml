@@ -1,0 +1,92 @@
+---
+title: Borda Industrial
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: false
+  work:
+    title: Work
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: work
+  values:
+    image:
+    project:
+    client:
+    subject:
+    video:
+    excerpt:
+    description:
+    is-featured:
+    is-full-width:
+    images:
+    - image:
+      aspect:
+    layout: project
+url:
+description:
+permalink: pretty
+exclude:
+- bower.json
+- Gemfile.lock
+- package.json
+- config.codekit3
+- README*
+- LICENSE*
+- CHANGELOG*
+- node_modules
+- ".gitignore"
+- bower_components
+- assets/scss
+plugins:
+- jekyll-paginate-v2
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+- jekyll/imgix
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+company: Borda Industrial
+company-registration:
+company-address:
+email: admin@bordaind.com
+analytics:
+logo: "/assets/img/logo.svg"
+per_page: 24
+date_format: "%b %d, %Y"
+future: true
+social:
+  instagram: https://www.instagram.com/
+clients:
+  nissan: https://www.nissan.com.mx/
+  omnilife: https://portal.omnilife.com/
+  ford: https://www.ford.mx/
+  uag: http://www.uag.mx/
+  patrice: https://www.patrice.com.mx/
+  dif: https://sistemadif.jalisco.gob.mx/
+compress_html:
+  comments:
+  - "<!-- "
+  - " -->"
+  blanklines: true
+  profile: false
+pagination:
+  collection: posts
+  enabled: true
+  per_page: 24
+  limit: 0
+  permalink: "/:num/"
+  title: ":title — :num of :max"
+  sort_field: date
+  sort_reverse: true
+autopages:
+  enabled: false

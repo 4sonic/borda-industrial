@@ -1,0 +1,48 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<!-- <audio src="/uploads/audio.mp3" autoplay loop></audio> -->
+<!-- Head -->
+{% include site/head.html %}
+<!-- End Head -->
+
+<body class="{{page.layout | slugify}}">
+
+<!-- Off Canvas Navigation -->
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap" data-close-on-click="false" data-content-scroll="false">
+{% include site/offcanvas.html %}
+</div>
+<!-- End Off Canvas Navigation -->
+
+<div class="off-canvas-content" data-off-canvas-content id="swup-body">
+<!-- Navigation -->
+{% include site/navigation.html %}
+<!-- End Navigation -->
+
+<div class="swup-transition-fade">
+<!-- Content -->
+{{content}}
+<!-- End Content -->
+</div>
+
+{% unless page.layout == "story" or "contact" %}
+<!-- Testimonials -->
+{% include testimonials.html %}
+<!-- End Testimonials -->
+{% endunless %}
+
+
+<!-- Footer -->
+{% include site/footer.html %}
+<!-- End Footer -->
+
+</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+---
+layout: default
+---
+
+
+
+
+<!-- Slider -->
+<div class="swiper-container show-for-medium">
+
+  <div class="swiper-button-prev-test flex-container align-center-middle"></div>
+  <div class="swiper-button-next-test flex-container align-center-middle"></div>
+
+
+  <div class="swiper-wrapper">
+    {% assign works = site.work | sort: 'position' | where: "is-featured", "true" %}
+    {% for work in works %}
+      <div class="swiper-slide small-10 medium-7 padding-horizontal-2 cell text-center">
+            {% assign image = work.image %}
+            <div class="margin-bottom-2 slide align-middle" data-interchange="{% include images/interchange-img-small-12-medium-6-cell.html %}">
+
+
+
+              <div class="content grid-y align-center show-for-large">
+                <div class="shrink cell padding-1">
+
+
+                      <div class="grid-x align-center">
+                        <div class="small-10 medium-10 large-8 cell">
+                          <div class="swiper-text-uppercase">{{ work.client }}</div>
+                          {% if work.subject %}<div class="text-lowercase">{{ work.subject }}</div>{% endif %}
+                          <!-- <div class="margin-top-2">{{ work.excerpt | markdownify }}</div> -->
+                        </div>
+                      </div>
+
+
+                </div>
+              </div>
+
+              {% if work.video %}
+              <div class="content-type grid-y align-center show-for-medium">
+                <div class="shrink cell padding-1">
+
+
+                      <div class="grid-x align-center">
+                        <div class="small-10 medium-10 large-8 cell">
+<svg class="icon icon-play_arrow"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play_arrow"></use></svg>
+                        </div>
+                      </div>
+
+
+                </div>
+              </div>
+              {% endif %}
+
+
+
+
+
+
+            </div>
+
+            <div class="meta padding-bottom-2">
+
+            {% if work.subject %}<div class="text-lowercase">{{ work.subject }}</div>{% endif %}
+            </div>
+
+        </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- End Slider -->
+
+
+<!-- Home Intro -->
+<div class="grid-container" style="padding-bottom: 4rem;">
+  <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1 align-center">
+
+    <div class="small-12 medium-8 large-10 cell text-center">
+      <h2>{{page.header}}</h2>
+    </div>
+
+  </div>
+</div>
+<!-- End Home Intro -->
+
+<!-- Works -->
+
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="small-12 medium-8 cell">
+      <h2>{{page.selected-text}}</h2>
+    </div>
+  </div>
+  <div class="grid-x grid-padding-x grid-padding-y">
+    {% assign works = site.work | where: "is-selected", "true" %}
+    {% for work in works %}
+    <div class="small-12 medium-6 {% if work.is-full-width %}medium-12{% endif %} cell text-center">
+        {% assign image = work.image %}
+        <div class="margin-bottom-1 image" data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}">
+          <div class="content grid-y align-center">
+            <div class="shrink cell padding-1">
+
+            </div>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- End Works -->
+
+<!-- Home Projects Link -->
+<div class="grid-container margin-bottom-3">
+  <div class="grid-x grid-padding-x grid-padding-y">
+
+    <div class="small-12 medium-8 cell medium-gray">
+      <a href="/galeria/" class="h4 sans-regular">Ver todo <svg class="icon icon-arrow-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-right"></use></svg></a>
+    </div>
+
+  </div>
+</div>
+<!-- End Home Projects Link -->
+
+<!-- Producto -->
+<div class="grid-container" style="padding-bottom: 4rem;">
+  <div class="grid-x grid-padding-x grid-padding-y padding-vertical-space-1 align-center">
+
+    <div class="small-12 medium-8 large-10 cell text-center">
+      <h2>{{page.product-header}}</h2>
+      <h3 class="sans-regular medium-gray">{{page.product-sub-header}}</h3>
+    </div>
+
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell text-center" data-aos="none">
+      <a href="/contacto/" class="button hollow">Contacto<svg class="icon icon-expand_more"><use xlink:href="/assets/icons/symbol-defs.svg#icon-expand_more"></use></svg></a>
+    </div>
+  </div>
+</div>
+<!-- End Products -->
+
+<!-- Hire Us Details -->
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2 margin-bottom-2  text-center medium-text-left">
+    {% for detail in page.details %}
+      <div class="small-12 medium-6 cell" data-aos="none">
+        <h3 class="primary-font">{{ detail.title }}</h3>
+        <p>{{ detail.text | markdownify }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<!-- End Hire Us Details -->
+
+<!-- Page Quote -->
+{% if page.quote %}
+<section class="light-gray-background">
+  <div class="grid-container padding-vertical-3">
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="small-12 medium-8 cell">
+        <h4>{{ page.quote }}</h4>
+        <h4 class="sans-regular medium-gray"><a href="mailto:admin@bordaind.com">{{ page.mail }}</a></h4>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Page Quote -->

@@ -1,0 +1,32 @@
+
+{% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
+<!-- Navigation -->
+<div class="grid-y align-center" style="height: 100%;" id="swup-menu">
+
+  <div class="shrink cell">
+    <ul class="menu vertical align-center">
+      {% for entry in site.data.navigation %}
+      {% if entry.url == current_page %}
+      {% assign current = ' class="active"' %}
+      {% else %}
+      {% assign current = null %}
+      {% endif %}
+      {% assign sublinks = entry.sublinks %}
+      {% if sublinks %}
+      <li{{ current }}>
+      <a href="{{ site.baseurl }}{{ entry.url }}" data-toggle="offCanvas">{{ entry.title }}</a>
+      <ul class="menu vertical">
+      {% for sublink in sublinks %}
+      <li><a href="{{ site.baseurl }}{{ sublink.url }}" data-toggle="offCanvas">{{ sublink.title }}</a></li>
+      {% endfor %}
+      </ul>
+      </li>
+      {% else %}
+      <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}" class="{{ entry.color }}" data-toggle="offCanvas"><h3 class="primary-font margin-bottom-0">{{ entry.title }}</h3></a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>
+<!-- End Navigation -->

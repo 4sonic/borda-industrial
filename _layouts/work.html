@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<!-- Page Image -->
+{% if page.image %}
+<section class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 cell">
+
+      {% assign image = page.image %}
+      <div data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}" class="image">
+        {% if page.video %}
+        <div class="grid-y height-100 align-center video content">
+          <div class="shrink cell text-center" data-src="{{page.video}}">
+            <a href="{{page.video}}" class="white"><svg class="icon icon-play-circle"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play-circle"></use></svg></a>
+            <p class="white">Ver video</p>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End Page Image -->
+
+<!-- Services Intro -->
+<section class="grid-container margin-top-2 margin-bottom-2" data-aos="none">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-10 cell text-center">
+      <h4>{{page.intro-text | markdownify}}</h4>
+    </div>
+  </div>
+</section>
+<!-- End Services Intro -->
+
+
+<!-- Works -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y">
+    {% assign works = site.work | where: "is-service", "true" %}
+    {% for work in works %}
+      {% include blocks/excerpt.html %}
+    {% endfor %}
+  </div>
+</div>
+<!-- End Works -->
+
+
+
+<!-- Clients -->
+<div class="grid-container padding-vertical-3">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-10 cell text-center">
+      <h3>Algunos de nuestros clientes</h3>
+    </div>
+  </div>
+  <div class="grid-x small-up-1 medium-up-3 align-center align-middle">
+
+    {% for item in site.clients %}
+    <div class="cell text-center padding-3">
+        <a href="{{ item[1] }}" target="_blank" rel="noopener"><span class="show-for-sr">{{ item[0] }}</span><svg class="icon icon-clients icon-{{ item[0] }}"><use xlink:href="/assets/icons/symbol-defs.svg#icon-{{ item[0] }}"></use></svg></a>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+<!-- End Clients -->
