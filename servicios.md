@@ -8,7 +8,7 @@ description: We work with marketing and innovation teams to invent products and 
 is-carousel: false
 has-carousel-text: false
 image: "/uploads/tajima2.jpg"
-video: "/uploads/video.mp4"
+video: "https://vimeo.com/470710826"
 service:
 - title: Servicios de Bordado
   icon: needle
