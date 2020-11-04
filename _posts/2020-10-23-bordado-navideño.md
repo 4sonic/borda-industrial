@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bordado navideño
-thumbnail: /img/uploads/borda-27.jpg
+title: Gorra bordada
+thumbnail: /img/uploads/gorra-bordada-3.jpg
 ---
 
