@@ -3,7 +3,7 @@ title: bordado
 date: 2019-04-10 13:22:00 Z
 position: 11
 image: "/uploads/01.jpg"
-client: Servicios de Bordado
+client: Servicios de Bordado y Costura
 is-featured: false
 is-selected: false
 is-service: true

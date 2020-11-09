@@ -65,7 +65,9 @@ per_page: 24
 date_format: "%b %d, %Y"
 future: true
 social:
-  instagram: https://www.instagram.com/
+  instagram: https://www.instagram.com/borda_industrial/
+  facebook: https://www.facebook.com/Borda-Industrial-364694690738877
+  whatsapp: https://api.whatsapp.com/send?phone=523321837632
 clients:
   nissan: https://www.nissan.com.mx/
   omnilife: https://portal.omnilife.com/
