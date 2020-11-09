@@ -21,12 +21,13 @@ layout: default
         <div id="map" style="width: 100%; height: 20rem" class="margin-bottom-1"></div>
       </div>
 
-      <div class="small-12 medium-2 cell">
+      <div class="small-12 medium-3 cell">
           <div class="cell contact__enquiry">
             <h3>{{ location.title }}</h4>
             {{ location.address-text | markdownify }}
-            <div><a href="{{ location.directions }}" class="underline">Dirección</a></div>
+            <div><a href="{{ location.directions }}" class="underline">Como llegar?</a></div>
             <div><a href="tel:{{ location.phone }}" class="underline">{{ location.phone }}</a></div>
+            <div><a href="tel:{{ location.schedule }}" class="underline">{{ location.schedule }}</a></div>
           </div>
       </div>
 
