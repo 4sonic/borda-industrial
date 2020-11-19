@@ -1,6 +1,5 @@
 ---
 layout: post
 title: Canasta bordada
-thumbnail: /img/uploads/borda-18.jpg
+thumbnail: /img/uploads/borda-44.jpg
 ---
-
