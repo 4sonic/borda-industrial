@@ -1,5 +1,5 @@
 ---
 title: Galeria
-position: 1
-layout: galeria
+position: 5
+layout: blog
 ---

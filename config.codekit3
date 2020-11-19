@@ -9,6 +9,41 @@
 	],
 "creatorBuild": "26330",
 "files": {
+	"\/_blog_categories\/bordado-3d.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_blog_categories\/bordado-3d.markdown",
+		"oF": 0
+		},
+	"\/_blog_categories\/bordado-convencional.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_blog_categories\/bordado-convencional.markdown",
+		"oF": 0
+		},
+	"\/_blog_categories\/costura.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_blog_categories\/costura.markdown",
+		"oF": 0
+		},
+	"\/_blog_categories\/impresion-digital.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_blog_categories\/impresion-digital.markdown",
+		"oF": 0
+		},
+	"\/_blog_categories\/parches.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_blog_categories\/parches.markdown",
+		"oF": 0
+		},
 	"\/_config.yml": {
 		"cB": 0,
 		"ft": 8192,
@@ -140,6 +175,20 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_includes\/site\/subscribe.html",
+		"oF": 0
+		},
+	"\/_layouts\/blog.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/blog.html",
+		"oF": 0
+		},
+	"\/_layouts\/category.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/category.html",
 		"oF": 0
 		},
 	"\/_layouts\/compress.html": {
@@ -10457,9 +10506,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 2,
-		"oAP": "\/galeria.md",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "\/galeria.html",
+		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
