@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mascarilla Bordada
-thumbnail: /img/uploads/borda-28.jpg
+title: mantel
+thumbnail: /img/uploads/Borda1.JPG
 categories: bordado-convencional
 ---
 
