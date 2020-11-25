@@ -2,7 +2,7 @@
 title: Confección
 date: 2019-04-10 13:22:00 Z
 position: 12
-image: "https://www.sabermassantafe.com/wp-content/files_mf/157355583000112.jpg"
+image: "/uploads/confeccion.jpg"
 client: Confección
 is-featured: false
 is-selected: false

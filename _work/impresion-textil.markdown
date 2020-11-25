@@ -2,7 +2,7 @@
 title: Impresion Textil
 date: 2019-04-10 13:22:00 Z
 position: 13
-image: "https://quantiasolutions.com/wp-content/uploads/impresi%C3%B3n-Direct-to-Garment.jpg"
+image: "/uploads/textil.jpg"
 client: Impresion Textil
 is-featured: false
 is-selected: false

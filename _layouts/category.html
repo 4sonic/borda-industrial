@@ -6,7 +6,7 @@ title: Categorias
   <div class="cell align-center text-center">
     <h1>{{ page.title }}</h1>
   </div>
-  <div class="grid-x grid-padding-x grid-padding-y small-up-1 align-center text-center">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 align-center text-center">
     {% assign category = page.title | downcase | replace: ' ', '-' %}
       {% assign category_posts = site.categories[category] %}
       {% for post in category_posts %}

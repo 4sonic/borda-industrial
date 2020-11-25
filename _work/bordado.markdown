@@ -2,7 +2,7 @@
 title: bordado
 date: 2019-04-10 13:22:00 Z
 position: 11
-image: "https://static.wixstatic.com/media/2be84e_9b97442874c043448a1708a280277ddb~mv2.jpg/v1/fill/w_592,h_469,al_c/2be84e_9b97442874c043448a1708a280277ddb~mv2.jpg"
+image: "/uploads/bordado.jpg"
 client: Servicios de Bordado
 is-featured: false
 is-selected: false
