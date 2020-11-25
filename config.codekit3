@@ -9,39 +9,32 @@
 	],
 "creatorBuild": "26330",
 "files": {
-	"\/_blog_categories\/bordado-3d.markdown": {
+	"\/_blog_categories\/empresa.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_blog_categories\/bordado-3d.markdown",
+		"oAP": "\/_blog_categories\/empresa.markdown",
 		"oF": 0
 		},
-	"\/_blog_categories\/bordado-convencional.markdown": {
+	"\/_blog_categories\/hogar.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_blog_categories\/bordado-convencional.markdown",
+		"oAP": "\/_blog_categories\/hogar.markdown",
 		"oF": 0
 		},
-	"\/_blog_categories\/costura.markdown": {
+	"\/_blog_categories\/impresion-textil.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_blog_categories\/costura.markdown",
+		"oAP": "\/_blog_categories\/impresion-textil.markdown",
 		"oF": 0
 		},
-	"\/_blog_categories\/impresion-digital.markdown": {
+	"\/_blog_categories\/moda.markdown": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_blog_categories\/impresion-digital.markdown",
-		"oF": 0
-		},
-	"\/_blog_categories\/parches.markdown": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_blog_categories\/parches.markdown",
+		"oAP": "\/_blog_categories\/moda.markdown",
 		"oF": 0
 		},
 	"\/_config.yml": {
@@ -212,13 +205,6 @@
 		"oAP": "\/_layouts\/default.html",
 		"oF": 0
 		},
-	"\/_layouts\/galeria.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_layouts\/galeria.html",
-		"oF": 0
-		},
 	"\/_layouts\/holding.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -275,11 +261,25 @@
 		"oAP": "\/_layouts\/time.html",
 		"oF": 0
 		},
+	"\/_layouts\/trabajos.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/trabajos.html",
+		"oF": 0
+		},
 	"\/_layouts\/work.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_layouts\/work.html",
+		"oF": 0
+		},
+	"\/_posts\/2020-10-22-canasta-bordada.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_posts\/2020-10-22-canasta-bordada.html",
 		"oF": 0
 		},
 	"\/_posts\/2020-10-22-canasta-bordada.md": {
@@ -410,11 +410,41 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_uploads\/empresa.jpg": {
+		"ft": 16384,
+		"iS": 27491,
+		"oA": 0,
+		"oAP": "\/_uploads\/empresa.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/hogar.jpg": {
+		"ft": 16384,
+		"iS": 36861,
+		"oA": 0,
+		"oAP": "\/_uploads\/hogar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_uploads\/maquinaria.jpg": {
 		"ft": 16384,
 		"iS": 268146,
 		"oA": 0,
 		"oAP": "\/_uploads\/maquinaria.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/moda.jpg": {
+		"ft": 16384,
+		"iS": 67250,
+		"oA": 0,
+		"oAP": "\/_uploads\/moda.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -510,11 +540,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_uploads\/textil.jpg": {
+		"ft": 16384,
+		"iS": 275049,
+		"oA": 0,
+		"oAP": "\/_uploads\/textil.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_uploads\/video.mp4": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_uploads\/video.mp4",
+		"oF": 0
+		},
+	"\/_work\/bordado.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/bordado.markdown",
 		"oF": 0
 		},
 	"\/_work\/carrousel-01.markdown": {
@@ -543,6 +590,27 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_work\/carrousel-04.markdown",
+		"oF": 0
+		},
+	"\/_work\/confeccion.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/confeccion.markdown",
+		"oF": 0
+		},
+	"\/_work\/diseño.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/diseño.markdown",
+		"oF": 0
+		},
+	"\/_work\/impresion-textil.markdown": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/impresion-textil.markdown",
 		"oF": 0
 		},
 	"\/_work\/selected-01.markdown": {
@@ -585,34 +653,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_work\/selected-06.markdown",
-		"oF": 0
-		},
-	"\/_work\/servicio-01.markdown": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_work\/servicio-01.markdown",
-		"oF": 0
-		},
-	"\/_work\/servicio-02.markdown": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_work\/servicio-02.markdown",
-		"oF": 0
-		},
-	"\/_work\/servicio-03.markdown": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_work\/servicio-03.markdown",
-		"oF": 0
-		},
-	"\/_work\/servicio-04.markdown": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_work\/servicio-04.markdown",
 		"oF": 0
 		},
 	"\/admin\/config.yml": {
@@ -10980,7 +11020,14 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/time.md": {
+	"\/trabajos.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/trabajos.html",
+		"oF": 0
+		},
+	"\/trabajos.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -10989,7 +11036,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 0,
-		"oAP": "\/time.html",
+		"oAP": "\/trabajos.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,

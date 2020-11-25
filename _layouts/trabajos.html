@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="grid-container padding-vertical-2">
+  <a href="{{page.url}}">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2">
+    {% for image in page.images %}
+    <div class="cell text-center">
+      <img src="{{ image.image }}">
+      <div class="h5 margin-top-1">{{ image.title }}</div>
+    </div>
+    {% endfor %}
+  </div>
+  </a>
+</div>

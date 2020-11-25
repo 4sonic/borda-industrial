@@ -29,17 +29,25 @@ layout: default
 <section class="grid-container">
 <div class="grid-x grid-padding-y align-center project__meta">
   <div class="small-8 medium-7 large-7 cell text-center">
-    <div class="h5 text-lowercase">{{ page.client }} </div>
-    <div class="h5 text-lowercase">{{ page.subject }}</div>
+    <div class="h4">{{ page.client }} </div>
+    <div class="h4">{{ page.subject }}</div>
   </div>
 </div>
 </section>
 <!-- End Title -->
 
+
+<div class="grid-container">
+  <div class="grid-x">
+    {{page.services}}
+  </div>
+</div>
+
+
 <!-- Content -->
 <section class="grid-container">
 <div class="grid-x grid-padding-y align-center">
-  <div class="small-12 medium-8 cell text-center">
+  <div class="small-12 medium-8 cell text-left">
     {{ content }}
   </div>
 </div>
@@ -82,8 +90,8 @@ layout: default
         <a href="{{ work.url }}">
           {% assign image = work.image %}
           <div class="margin-bottom-2 image" data-interchange="{% include images/interchange-img-small-12-medium-4-cell.html %}"></div>
-            <div class="text-lowercase">{{ work.client }} </div>
-            <div class="text-lowercase">{{ work.subject }}</div>
+            <div>{{ work.client }} </div>
+            <div>{{ work.subject }}</div>
         </a>
       </div>
     {% endfor %}
