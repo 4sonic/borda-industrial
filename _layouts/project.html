@@ -59,7 +59,7 @@ layout: default
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     {% for picture in page.images %}
      {% if picture.aspect == "landscape" %}
-     <div class="small-12 medium-12 cell">
+     <div class="small-12 medium-6 cell">
     {% assign image = picture.image %}
     <div class="margin-bottom-2 image" data-interchange="{% include images/interchange-img-small-12-medium-12-cell.html %}"></div>
      </div>
