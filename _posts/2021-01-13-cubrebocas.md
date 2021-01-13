@@ -1,7 +1,7 @@
 ---
 layout: post
 title: cubrebocas
-thumbnail: /img/uploads/Borda36.jpg
+thumbnail: /img/uploads/Borda37.jpg
 categories: moda
 ---
 
