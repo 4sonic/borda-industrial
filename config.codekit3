@@ -205,6 +205,13 @@
 		"oAP": "\/_layouts\/default.html",
 		"oF": 0
 		},
+	"\/_layouts\/galeria.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/galeria.html",
+		"oF": 0
+		},
 	"\/_layouts\/holding.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -259,13 +266,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_layouts\/time.html",
-		"oF": 0
-		},
-	"\/_layouts\/trabajos.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_layouts\/trabajos.html",
 		"oF": 0
 		},
 	"\/_layouts\/work.html": {
@@ -10990,24 +10990,6 @@
 		"oA": 2,
 		"oAP": "\/terms.md",
 		"oF": 1,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/trabajos.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/trabajos.html",
-		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,

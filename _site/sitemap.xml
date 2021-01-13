@@ -13,6 +13,14 @@
 <loc>http://localhost:4000/categoria/moda/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/hogar/2020/11/25/mantel/</loc>
+<lastmod>2020-11-25T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/hogar/2020/11/25/toalla/</loc>
+<lastmod>2020-11-25T00:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/work/bordado/</loc>
 <lastmod>2019-04-10T13:22:00+00:00</lastmod>
 </url>
@@ -88,9 +96,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/terms/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/trabajos/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/servicios/</loc>
